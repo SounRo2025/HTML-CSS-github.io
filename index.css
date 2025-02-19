@@ -1,0 +1,453 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #011731;
+}
+.navbar {
+  background-color: #0c2340;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+.div {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-left: 20px;
+}
+.menu {
+  display: flex;
+  gap: 2px;
+}
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 9px;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+.menu-item a{
+  text-decoration: none;
+  color: white;
+}
+.menu-items {
+  position: relative;
+  cursor: pointer;
+  font-size: 9px;
+  padding: 10px 15px;
+  top: 9px;
+  color: goldenrod;
+  transition: background 0.3s;
+}
+.menu-item img {
+  width: 25px;
+  height: 20px;
+}
+.menu-item i {
+  padding: 7px;
+}
+.menu-items i {
+  position: relative;
+  left: 5px;
+}
+.menu-item:hover {
+  background-color: #1a3b6e;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0c2340;
+  min-width: 180px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.dropdown a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.dropdown a:hover {
+  background-color: #1a3b6e;
+}
+.menu-item:hover .dropdown {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ssection {
+  width: 10%;
+  height: 90vh;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: #011731;
+  position: relative;
+  box-shadow: 0px 30px #02152e;
+  height: 30px;
+}
+.menu01 {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  right: 4vh;
+}
+.menu-item01 i {
+  padding: 7px;
+}
+.menu-items01 i {
+  position: relative;
+  left: 5px;
+}
+.flag-cambodia {
+  display: flex;
+  position: relative;
+  left: 26px;
+}
+.menu-item01 {
+  position: relative;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: khmer os battambong;
+  color: white;
+  padding: 10px 20px;
+  top: 10px;
+  transition: background 0.3s;
+}
+.menu-item01:hover {
+  color: goldenrod;
+  background-color: #1a3b6e;
+  text-decoration: underline;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0c2340;
+  min-width: 180px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.dropdown a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.dropdown a:hover {
+  background-color: #1a3b6e;
+}
+.menu-item01:hover .dropdown {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.one {
+  width: 890px;
+  height: 360px;
+  display: flex;
+  position: relative;
+  left: 15vh;
+  top: 28vh;
+}
+.slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 76px;
+}
+.back {
+  width: 40px;
+  height: 100%;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-angle-right,
+.fa-angle-left {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.footer {
+  background-color: #0a1627;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  top: 30vh;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+.footer-menu p {
+  font-size: 10px;
+  margin-top: 20px;
+  font-family: khmer os battambong;
+}
+
+.footer-item {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-item i {
+  font-size: 24px;
+  margin-bottom: 8px;
+  display: block;
+  position: relative;
+}
+.footer-item i:hover {
+  color: gold;
+}
+
+.notification-dot {
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.icon {
+  width: 100%;
+  height: 60vh;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.icon-01{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.icon-02{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.icon-03{
+  animation: appear 7s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.icon-01 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 40vh;
+}
+.icon-02 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 80vh;
+}
+.icon-03 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 120vh;
+}
+.box img {
+  width: 94vh;
+  height: 85vh;
+  border-radius: 4px;
+  position: relative;
+  bottom: 20px;
+}
+.p {
+  color: white;
+  font-size: 12px;
+  position: relative;
+  bottom: 10px;
+}
+.morelogo {
+  width: 90%;
+  height: 60vh;
+}
+.aba {
+  left: 50px;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  top: 160vh;
+  background: #022653;
+  border-radius: 7px;
+}
+.h1 {
+  color: white;
+  font-family: khmer os battambong;
+  text-align: center;
+  padding: 10px;
+}
+.image img {
+  width: 70px;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.last {
+  width: 100%;
+  height: 70px;
+}
+.last01 {
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  top: 180vh;
+}
+.box01 {
+  margin-top: 10px;
+  width: 53vh;
+  height: 60vh;
+  background: #979797;
+  border-radius: 1px;
+}
+.box01 img {
+  width: 30vh;
+  height: 40px;
+  position: relative;
+  left: 45px;
+  top: 10px;
+}
+.p01 {
+  font-family: khmer os battambong;
+  font-family: 15px;
+  text-align: justify;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  word-spacing: -1px;
+}
+.heading {
+  width: 100%;
+  height: 50vh;
+}
+.heading_01 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  background: #021935;
+  position: relative;
+  top: 228vh;
+}
+.last-page {
+  display: flex;
+}
+.last-page01 {
+  display: flex;
+}
+.last-page h1 {
+  color: white;
+  font-size: 10px;
+  position: relative;
+  left: 270px;
+  top: 20px;
+  padding: 10px;
+}
+.last-page01 h1 {
+  color: white;
+  font-size: 10px;
+  position: relative;
+  right: 200px;
+  top: 50px;
+  padding: 10px;
+}
+.image-logo img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 120px;
+  right: 90vh;
+}
+.last-footer {
+  display: flex;
+  position: relative;
+  top: 190vh;
+}
+.non img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 60vh;
+  border: 2px solid gold;
+  border-radius: 20px;
+}
+.non img:hover {
+  border: lightcoral;
+}
